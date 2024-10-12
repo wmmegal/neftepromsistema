@@ -13,3 +13,134 @@
         font-style: normal;
     }
 }
+
+@layer components {
+    .bg-body {
+        background: url('img/bg-body.png') repeat-y center #000;
+    }
+
+    .btn {
+        @apply inline-flex justify-center px-8 py-4 text-xl leading-none;
+
+        &.btn-primary {
+            @apply bg-primary text-white;
+
+            &:hover {
+                @apply bg-[#3d78f0];
+            }
+        }
+
+        &.btn-big {
+            @apply px-16 py-6 text-2xl;
+            filter: drop-shadow(11px 10px 8px rgba(24, 83, 202, 0.38));
+        }
+    }
+
+    .main-menu {
+        @apply flex justify-between;
+
+        li {
+            @apply flex-auto;
+
+            a {
+                @apply block py-9 text-center text-xl text-white;
+            }
+        }
+    }
+
+    .title {
+        @apply mb-4 text-4xl font-bold uppercase xl:mb-8;
+    }
+
+    .product-main {
+        figure {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                filter: grayscale(100%);
+                object-fit: cover;
+            }
+
+            figcaption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: #fff;
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                padding: 0 2rem;
+                height: 65px;
+
+                span {
+                    position: relative;
+                    z-index: 1;
+                    font-size: 1.125rem;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 11px;
+                    height: 65px;
+                    background-color: #1853ca;
+                    transition: 0.3s all;
+                }
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.5);
+                transition: 0.3s all;
+                opacity: 1;
+            }
+        }
+
+        &:hover {
+            figure {
+                img {
+                    filter: grayscale(0%);
+                }
+
+                figcaption {
+                    &:after {
+                        width: 100%;
+                    }
+                }
+
+                &:after {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    .form-input,
+    .form-textarea {
+        @apply border-0 px-6 py-5 leading-none;
+    }
+}
+
+.splide__pagination {
+    margin-top: 2rem !important;
+    gap: 2rem;
+
+    li {
+        line-height: 3px !important;
+
+        button {
+            @apply h-[3px] w-[76px] bg-[#332f2f];
+            height: 3px !important;
+
+            &.is-active {
+                @apply bg-white;
+            }
+        }
+    }
+}

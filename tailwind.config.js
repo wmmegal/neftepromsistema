@@ -1,8 +1,10 @@
+import forms from '@tailwindcss/forms';
+import hamburgers from 'tailwind-hamburgers';
+import typography from '@tailwindcss/typography';
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-    content: [
-        './src/**/*.{html,js}',
-    ],
+    content: ['./src/**/*.{html,js}'],
     theme: {
         container: {
             center: true,
@@ -15,16 +17,16 @@ module.exports = {
             },
         },
         colors: {
-            'primary': '#1752ca',
-            'black': '#16140f',
-            'white': '#FFFFFF',
+            primary: '#1752ca',
+            secondary: '#696969',
+            black: '#16140f',
+            white: '#FFFFFF',
         },
         extend: {
             fontSize: {
-                '4xl': ['40px', '1'],
+                '4xl': ['40px', '1.5'],
             },
         },
     },
-    plugins: [],
+    plugins: [forms, hamburgers, typography],
 };
-

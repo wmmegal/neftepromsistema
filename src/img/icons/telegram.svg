@@ -1,0 +1,19 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>7808184_telegram_social media_icon-svg</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(406.36,307.56,-307.56,406.36,67.83,82.42)">
+			<stop offset="0" stop-color="#28aae0"/>
+			<stop offset="1" stop-color="#23b7ec"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: #fefefe } 
+	</style>
+	<g id="Layer_x0020_1">
+		<g id="_1726092097792">
+			<path fill-rule="evenodd" class="s0" d="m256 0c141.4 0 256 114.6 256 256 0 141.4-114.6 256-256 256-141.4 0-256-114.6-256-256 0-141.4 114.6-256 256-256z"/>
+			<path class="s1" d="m371.2 163.5l-36.4 183.8c0 0-5.1 12.7-19.1 6.6l-84.1-64.5-0.4-0.2c11.3-10.2 99.4-89.4 103.3-93 5.9-5.5 2.2-8.8-4.7-4.6l-130.1 82.6-50.2-16.9c0 0-7.9-2.8-8.7-8.9-0.7-6.1 9-9.5 9-9.5l204.6-80.2c0 0 16.8-7.4 16.8 4.8z"/>
+		</g>
+	</g>
+</svg>
