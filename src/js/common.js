@@ -3,6 +3,8 @@ import '../css/tailwind.css';
 import '@splidejs/splide/css/core';
 import Splide from '@splidejs/splide';
 import Alpine from 'alpinejs';
+import '@fancyapps/ui/dist/fancybox/fancybox.css';
+import { Fancybox } from '@fancyapps/ui';
 
 window.Alpine = Alpine;
 
@@ -35,3 +37,5 @@ if (splideCta) {
         },
     }).mount();
 }
+
+Fancybox.bind();
