@@ -37,13 +37,13 @@
     }
 
     .main-menu {
-        @apply flex justify-between;
+        @apply flex flex-col justify-between xl:flex-row;
 
         li {
             @apply flex-auto;
 
             a {
-                @apply block py-9 text-center text-xl text-white;
+                @apply block py-4 text-center text-xl text-white xl:py-9;
             }
         }
     }
@@ -128,15 +128,20 @@
 }
 
 .splide__pagination {
-    margin-top: 2rem !important;
-    gap: 2rem;
+    @apply gap-4 xl:gap-8;
+    margin-top: 1rem !important;
+
+    @media screen(md) {
+        margin-top: 2rem !important;
+    }
 
     li {
-        line-height: 3px !important;
+        @apply h-[3px];
+        vertical-align: top;
 
         button {
-            @apply h-[3px] w-[76px] bg-[#332f2f];
-            height: 3px !important;
+            @apply h-[2px] w-[40px] bg-[#332f2f] xl:h-[3px] xl:w-[76px];
+            vertical-align: top;
 
             &.is-active {
                 @apply bg-white;

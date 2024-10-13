@@ -8,8 +8,12 @@ window.Alpine = Alpine;
 
 Alpine.data('app', () => ({
     rule: true,
-    get showMenu() {
+    showMenu: true,
+    matchMedia() {
         return window.matchMedia('(min-width: 1200px)').matches;
+    },
+    init() {
+        this.showMenu = this.matchMedia();
     },
 }));
 
@@ -26,7 +30,7 @@ if (splideCta) {
         interval: 5000,
         breakpoints: {
             640: {
-                height: 300,
+                height: 220,
             },
         },
     }).mount();
