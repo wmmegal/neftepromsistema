@@ -1,0 +1,87 @@
+<div class="bg-black text-white">
+    <div class="container py-5 xl:py-10">
+        <div class="title mb-5 text-center leading-none xl:mb-10">Контакты</div>
+        <ul class="flex flex-wrap items-center justify-center gap-8">
+            <li class="text-xl xl:text-2xl">г.Армавир, ул.Чичерина, 83</li>
+            <li class="flex items-center gap-2">
+                <a href="tel:+79186200632" class="text-xl xl:text-2xl"
+                    >+7 (918) <span class="font-bold">620-06-32</span></a
+                >
+                <a href="#">
+                    <svg class="icon-wa size-7">
+                        <use href="#icon-wa"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon-telegram size-7">
+                        <use href="#icon-telegram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="flex items-center gap-2">
+                <a href="tel:+79186200632" class="xl: text-2xl text-xl"
+                    >+7 (918) <span class="font-bold">620-06-32</span></a
+                >
+                <a href="#">
+                    <svg class="icon-wa size-7">
+                        <use href="#icon-wa"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon-telegram size-7">
+                        <use href="#icon-telegram"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="relative">
+    <img src="img/map.jpg" alt="" width="2003" height="751" loading="lazy" />
+    <div class="xl:container xl:absolute xl:bottom-0 xl:left-1/2 xl:-translate-x-1/2">
+        <div class="w-full bg-black px-10 py-12 text-white xl:absolute xl:bottom-0 xl:left-0 xl:w-[502px]">
+            <div class="mb-8 text-center text-2xl font-bold uppercase">
+                Остались вопросы? <br />
+                Напишите нам
+            </div>
+            <form action="#">
+                <div class="mb-5">
+                    <input type="text" placeholder="Ваше имя" class="form-input w-full" aria-label="" />
+                </div>
+                <div class="mb-5">
+                    <input type="text" placeholder="Телефон" class="form-input w-full" aria-label="" />
+                </div>
+                <div class="mb-5">
+                    <textarea
+                        placeholder="Вопрос"
+                        class="form-textarea h-[127px] w-full"
+                        aria-label="Вопрос"
+                    ></textarea>
+                </div>
+                <div class="mb-6 flex items-center gap-2">
+                    <input
+                        type="checkbox"
+                        id="rule"
+                        class="form-checkbox size-8 border-0 bg-white text-black focus:border-0 focus:shadow-none focus:outline-0 focus:ring-0 focus:ring-offset-0"
+                        x-model="rule"
+                        name="rule"
+                    />
+                    <label for="rule" class="cursor-pointer text-white"
+                        >Согласен (а) на обработку перональных даных
+                    </label>
+                </div>
+                <div class="text-center">
+                    <button
+                        type="button"
+                        class="btn btn-primary btn-big w-full"
+                        :disabled="!rule"
+                        :class="{'opacity-50': !rule, 'pointer-events-none': !rule}"
+                    >
+                        Отправить
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

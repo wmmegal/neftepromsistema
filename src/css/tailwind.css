@@ -123,7 +123,7 @@
 
     .form-input,
     .form-textarea {
-        @apply border-0 px-6 py-5 leading-none;
+        @apply border-0 px-6 py-5 leading-none text-black;
     }
 }
 
@@ -145,6 +145,58 @@
 
             &.is-active {
                 @apply bg-white;
+            }
+        }
+    }
+}
+
+.prose {
+    h1,
+    h2,
+    h3 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    h2,
+    h3 {
+        font-size: 24px;
+    }
+
+    a.btn {
+        text-decoration: none;
+    }
+
+    ul {
+        list-style: square;
+
+        li::marker {
+            color: theme('colors.primary');
+        }
+    }
+
+    ol {
+        list-style: none;
+        padding: 0;
+        counter-set: list;
+
+        li {
+            @apply relative pl-12;
+
+            &:before {
+                counter-increment: list;
+                content: counter(list);
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: theme('colors.primary');
+                width: 30px;
+                height: 30px;
+                color: #fff;
+                text-align: center;
+                font-size: 0.875rem;
+                line-height: 32px;
+                border-radius: 50%;
             }
         }
     }
