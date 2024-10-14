@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ru" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>Index</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+      <script type="module" crossorigin src="./assets/js/common-9fb2c325.js"></script>
+      <link rel="stylesheet" href="./assets/css/common-4b46c47b.css">
+    </head>
+    <body class="flex min-h-screen flex-col" x-data="app" @resize.window="matchMedia">
+        <header id="header">
+    <div class="container flex flex-wrap items-center justify-center gap-4 py-4 xl:gap-0 xl:py-8">
+        <div class="text-center xl:text-left">
+            <a href="/" class="block text-2xl font-bold uppercase leading-none xl:text-4xl xl:leading-none">
+                НЕФТЕ<span class="text-primary">ПРОМ</span>СИСТЕМА
+            </a>
+            <div class="text-xl uppercase text-secondary">нефтяная платформа</div>
+        </div>
+        <div class="space-y-2 xl:ml-auto">
+            <div class="flex items-center gap-2">
+                <a href="tel:+79186200632" class="text-xl">+7 (918) <span class="font-bold">620-06-32</span></a>
+                <a href="#">
+                    <svg class="icon-wa size-7">
+                        <use href="#icon-wa"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon-telegram size-7">
+                        <use href="#icon-telegram"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="flex items-center gap-2">
+                <a href="tel:+79186200632" class="text-xl">+7 (918) <span class="font-bold">620-06-32</span></a>
+                <a href="#">
+                    <svg class="icon-wa size-7">
+                        <use href="#icon-wa"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon-telegram size-7">
+                        <use href="#icon-telegram"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col items-center gap-3 xl:ml-12">
+            <button class="btn btn-primary" data-fancybox data-src="#callback">Заказать звонок</button>
+            <a href="mailto:info@tdnps.ru" class="text-xl text-primary">info@tdnps.ru</a>
+        </div>
+    </div>
+</header>
+<nav class="bg-body">
+    <div class="container">
+        <div class="z-10 flex justify-center py-4 xl:hidden">
+            <div class="tham tham-e-spin tham-w-8" @click="showMenu = !showMenu" :class="{'tham-active': showMenu}">
+                <div class="tham-box">
+                    <div class="tham-inner bg-white"></div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="main-menu" x-show="showMenu" x-transition x-cloak>
+            <li class="current"><a href="#">Главная</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Продукция</a></li>
+            <li><a href="#">Сертификаты</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+
+        <div class="container pb-10 pt-6 xl:pb-20">
+            <ul class="mb-12 flex items-center gap-3">
+                <li class="flex items-center gap-2">
+                    <i class="size-1 rounded-full bg-primary"></i>
+                    <a href="#" class="text-primary">Главная</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="size-1 bg-black"></i>
+                    <span>О компании</span>
+                </li>
+            </ul>
+            <article class="prose mb-10 max-w-max">
+                <h1>Раздел продукции</h1>
+                <p>
+                    Компания “НЕФТЕПРОМСИСТЕМА” специализируется на разработке и внедрении химических продуктов и
+                    технологий для процессов нефтедобычи. Основанная в 1978 году, компания имеет более 40 лет опыта в
+                    нефтепромысловой химии и предлагает широкий спектр решений для повышения нефтеотдачи пластов и
+                    интенсификации добычи нефти
+                </p>
+            </article>
+            <div class="grid grid-cols-1 gap-7 lg:grid-cols-4">
+                <a href="img/doc.jpg" data-fancybox="gallery">
+                    <img src="./assets/img/doc-8e272eba.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                </a>
+                <a href="img/doc.jpg" data-fancybox="gallery">
+                    <img src="./assets/img/doc-8e272eba.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                </a>
+                <a href="img/doc.jpg" data-fancybox="gallery">
+                    <img src="./assets/img/doc-8e272eba.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                </a>
+                <a href="img/doc.jpg" data-fancybox="gallery">
+                    <img src="./assets/img/doc-8e272eba.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                </a>
+                <a href="img/doc.jpg" data-fancybox="gallery">
+                    <img src="./assets/img/doc-8e272eba.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                </a>
+                <a href="img/doc.jpg" data-fancybox="gallery">
+                    <img src="./assets/img/doc-8e272eba.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                </a>
+                <a href="img/doc.jpg" data-fancybox="gallery">
+                    <img src="./assets/img/doc-8e272eba.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                </a>
+                <a href="img/doc.jpg" data-fancybox="gallery">
+                    <img src="./assets/img/doc-8e272eba.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                </a>
+            </div>
+            <nav class="mt-10 flex items-center justify-center gap-4 text-2xl font-medium xl:gap-12">
+    <a href="#">
+        <svg class="icon-angle h-14 w-10 rotate-180">
+            <use href="#icon-angle"></use>
+        </svg>
+    </a>
+    <a href="#" class="hover:text-primary">1</a>
+    <span class="text-primary">2</span>
+    <a href="#" class="hover:text-primary">3</a>
+    <a href="#" class="hover:text-primary">4</a>
+    <a href="#" class="hover:text-primary">5</a>
+    <a href="#">
+        <svg class="icon-angle h-14 w-10">
+            <use href="#icon-angle"></use>
+        </svg>
+    </a>
+</nav>
+
+        </div>
+        <div class="bg-black text-white">
+    <div class="container py-5 xl:py-10">
+        <div class="title mb-5 text-center leading-none xl:mb-10">Контакты</div>
+        <ul class="flex flex-wrap items-center justify-center gap-8">
+            <li class="text-xl xl:text-2xl">г.Армавир, ул.Чичерина, 83</li>
+            <li class="flex items-center gap-2">
+                <a href="tel:+79186200632" class="text-xl xl:text-2xl"
+                    >+7 (918) <span class="font-bold">620-06-32</span></a
+                >
+                <a href="#">
+                    <svg class="icon-wa size-7">
+                        <use href="#icon-wa"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon-telegram size-7">
+                        <use href="#icon-telegram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="flex items-center gap-2">
+                <a href="tel:+79186200632" class="xl: text-2xl text-xl"
+                    >+7 (918) <span class="font-bold">620-06-32</span></a
+                >
+                <a href="#">
+                    <svg class="icon-wa size-7">
+                        <use href="#icon-wa"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon-telegram size-7">
+                        <use href="#icon-telegram"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="relative">
+    <img src="./assets/img/map-b4d70181.jpg" alt="" width="2003" height="751" loading="lazy" />
+    <div class="xl:container xl:absolute xl:bottom-0 xl:left-1/2 xl:-translate-x-1/2">
+        <div class="w-full bg-black px-10 py-12 text-white xl:absolute xl:bottom-0 xl:left-0 xl:w-[502px]">
+            <div class="mb-8 text-center text-2xl font-bold uppercase">
+                Остались вопросы? <br />
+                Напишите нам
+            </div>
+            <form action="#">
+                <div class="mb-5">
+                    <input type="text" placeholder="Ваше имя" class="form-input w-full" aria-label="" />
+                </div>
+                <div class="mb-5">
+                    <input type="text" placeholder="Телефон" class="form-input w-full" aria-label="" />
+                </div>
+                <div class="mb-5">
+                    <textarea
+                        placeholder="Вопрос"
+                        class="form-textarea h-[127px] w-full"
+                        aria-label="Вопрос"
+                    ></textarea>
+                </div>
+                <div class="mb-6 flex items-center gap-2">
+                    <input
+                        type="checkbox"
+                        id="rule"
+                        class="form-checkbox size-8 border-0 bg-white text-black focus:border-0 focus:shadow-none focus:outline-0 focus:ring-0 focus:ring-offset-0"
+                        x-model="rule"
+                        name="rule"
+                    />
+                    <label for="rule" class="cursor-pointer text-white"
+                        >Согласен (а) на обработку перональных даных
+                    </label>
+                </div>
+                <div class="text-center">
+                    <button
+                        type="button"
+                        class="btn btn-primary btn-big w-full"
+                        :disabled="!rule"
+                        :class="{'opacity-50': !rule, 'pointer-events-none': !rule}"
+                    >
+                        Отправить
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+        <footer id="footer" class="mt-auto bg-black py-8 xl:py-16">
+    <div class="container flex flex-wrap items-center justify-between">
+        <div class="text-white">
+            <div class="block text-[32px] font-bold uppercase leading-none">НЕФТЕПРОМСИСТЕМА</div>
+            <div class="text-xl uppercase text-[#989898]">нефтяная платформа</div>
+        </div>
+        <a href="#" class="text-lg text-white underline hover:no-underline">Создание сайтов в Армавире</a>
+    </div>
+</footer>
+
+<div class="w-[502px] bg-white" style="display: none" id="callback">
+    <div class="mb-6 text-center text-2xl font-medium uppercase">Заказать звонок</div>
+    <form action="#">
+        <div class="mb-5">
+            <input type="text" placeholder="Ваше имя" class="form-input w-full bg-[#ebebeb]" aria-label="" />
+        </div>
+        <div class="mb-5">
+            <input type="text" placeholder="Телефон" class="form-input w-full bg-[#ebebeb]" aria-label="" />
+        </div>
+        <div class="mb-6 flex items-center gap-2">
+            <input
+                type="checkbox"
+                id="rule-2"
+                class="form-checkbox size-8 border-0 bg-[#ebebeb] text-black focus:border-0 focus:shadow-none focus:outline-0 focus:ring-0 focus:ring-offset-0"
+                x-model="rule"
+                name="rule"
+            />
+            <label for="rule-2" class="cursor-pointer">Согласен (а) на обработку перональных даных </label>
+        </div>
+        <div class="text-center">
+            <button
+                type="button"
+                class="btn btn-primary btn-big w-full"
+                :disabled="!rule"
+                :class="{'opacity-50': !rule, 'pointer-events-none': !rule}"
+            >
+                Отправить
+            </button>
+        </div>
+    </form>
+</div>
+
+    </body>
+</html>
