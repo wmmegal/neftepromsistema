@@ -8,3 +8,34 @@
     </div>
 </footer>
 <script type="module" src="./js/common.js" defer></script>
+<div class="w-[502px] bg-white" style="display: none" id="callback">
+    <div class="mb-6 text-center text-2xl font-medium uppercase">Заказать звонок</div>
+    <form action="#">
+        <div class="mb-5">
+            <input type="text" placeholder="Ваше имя" class="form-input w-full bg-[#ebebeb]" aria-label="" />
+        </div>
+        <div class="mb-5">
+            <input type="text" placeholder="Телефон" class="form-input w-full bg-[#ebebeb]" aria-label="" />
+        </div>
+        <div class="mb-6 flex items-center gap-2">
+            <input
+                type="checkbox"
+                id="rule-2"
+                class="form-checkbox size-8 border-0 bg-[#ebebeb] text-black focus:border-0 focus:shadow-none focus:outline-0 focus:ring-0 focus:ring-offset-0"
+                x-model="rule"
+                name="rule"
+            />
+            <label for="rule-2" class="cursor-pointer">Согласен (а) на обработку перональных даных </label>
+        </div>
+        <div class="text-center">
+            <button
+                type="button"
+                class="btn btn-primary btn-big w-full"
+                :disabled="!rule"
+                :class="{'opacity-50': !rule, 'pointer-events-none': !rule}"
+            >
+                Отправить
+            </button>
+        </div>
+    </form>
+</div>

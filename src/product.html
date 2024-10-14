@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>Index</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    </head>
+    <body class="flex min-h-screen flex-col" x-data="app" @resize.window="matchMedia">
+        <load ="partials/header.html" />
+        <div class="container pb-10 pt-6 xl:pb-20">
+            <ul class="mb-12 flex items-center gap-3">
+                <li class="flex items-center gap-2">
+                    <i class="size-1 rounded-full bg-primary"></i>
+                    <a href="#" class="text-primary">Главная</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="size-1 bg-black"></i>
+                    <span>О компании</span>
+                </li>
+            </ul>
+            <article class="prose mb-10 max-w-max">
+                <h1 class="uppercase">Раздел продукции</h1>
+                <div class="grid grid-cols-1 gap-y-6 lg:grid-cols-2 xl:gap-x-8">
+                    <div class="relative col-span-2 border-[6px] border-[#ececec] lg:col-span-1">
+                        <div class="splide splide-product">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img
+                                            src="img/product.jpg"
+                                            alt=""
+                                            width="358"
+                                            height="307"
+                                            loading="lazy"
+                                            class="w-full"
+                                        />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img
+                                            src="img/product.jpg"
+                                            alt=""
+                                            width="358"
+                                            height="307"
+                                            loading="lazy"
+                                            class="w-full"
+                                        />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img
+                                            src="img/product.jpg"
+                                            alt=""
+                                            width="358"
+                                            height="307"
+                                            loading="lazy"
+                                            class="w-full"
+                                        />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="absolute top-1/2 z-10 w-full -translate-y-1/2">
+                            <button type="button" class="js-btn-prev hover:text-primary">
+                                <svg class="icon-angle h-18 w-14 rotate-180">
+                                    <use href="#icon-angle"></use>
+                                </svg>
+                            </button>
+                            <button type="button" class="js-btn-next absolute right-0 hover:text-primary">
+                                <svg class="icon-angle h-18 w-14">
+                                    <use href="#icon-angle"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                            Компания “НЕФТЕПРОМСИСТЕМА” специализируется на разработке и внедрении химических продуктов
+                            и технологий для процессов нефтедобычи. Основанная в 1978 году, компания имеет более 40 лет
+                            опыта в нефтепромысловой химии и предлагает широкий спектр решений для повышения нефтеотдачи
+                            пластов и интенсификации добычи нефти
+                        </p>
+                        <a href="#" class="btn btn-primary">Опросной лист</a>
+                    </div>
+                    <div class="col-span-2">
+                        <p>
+                            Железнодорожные перевозки вязких нефтепродуктов связаны с большими трудностями при сливе из
+                            железнодорожных цистерн, особенно в холодное время года. Продукт приходит загустевшим, а в
+                            ряде случаев – полностью застывшим, и его невозможно слить без предварительного разогрева.
+                        </p>
+                        <p>
+                            Для решения данной задачи компанией ООО «Главнефтеснаб» разработан комплекс
+                            автоматизированного разогрева верхнего и нижнего слива вязких нефтепродуктов УСН-М15
+                        </p>
+                        <h2>ОСНОВНЫЕ ПАРАМЕТРЫ И ХАРАКТЕРИСТИКИ ИЗДЕЛИЯ</h2>
+                        <table class="not-prose">
+                            <thead>
+                                <tr>
+                                    <th>Наименование параметра</th>
+                                    <th>Значение параметра</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Климатическое исполнение по ГОСТ 15150-69</td>
+                                    <td>У1</td>
+                                </tr>
+                                <tr>
+                                    <td>Рабочее давление, Мпа, не более</td>
+                                    <td>1,0</td>
+                                </tr>
+                                <tr>
+                                    <td>Климатическое исполнение по ГОСТ 15150-69</td>
+                                    <td>У1</td>
+                                </tr>
+                                <tr>
+                                    <td>Рабочее давление, Мпа, не более</td>
+                                    <td>1,0</td>
+                                </tr>
+                                <tr>
+                                    <td>Климатическое исполнение по ГОСТ 15150-69</td>
+                                    <td>У1</td>
+                                </tr>
+                                <tr>
+                                    <td>Рабочее давление, Мпа, не более</td>
+                                    <td>1,0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-span-2 grid grid-cols-1 gap-7 lg:grid-cols-4">
+                        <a href="img/doc.jpg" data-fancybox="gallery">
+                            <img src="img/doc.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                        </a>
+                        <a href="img/doc.jpg" data-fancybox="gallery">
+                            <img src="img/doc.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                        </a>
+                        <a href="img/doc.jpg" data-fancybox="gallery">
+                            <img src="img/doc.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                        </a>
+                        <a href="img/doc.jpg" data-fancybox="gallery">
+                            <img src="img/doc.jpg" alt="" width="275" class="w-full" height="407" loading="lazy" />
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <load ="partials/contacts.html" />
+        <load ="partials/footer.html" />
+    </body>
+</html>

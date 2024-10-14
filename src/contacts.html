@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <title>Index</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    </head>
+    <body class="flex min-h-screen flex-col" x-data="app" @resize.window="matchMedia">
+        <load ="partials/header.html" />
+        <div class="container pb-10 pt-6 xl:pb-20">
+            <ul class="mb-12 flex items-center gap-3">
+                <li class="flex items-center gap-2">
+                    <i class="size-1 rounded-full bg-primary"></i>
+                    <a href="#" class="text-primary">Главная</a>
+                </li>
+                <li class="flex items-center gap-2">
+                    <i class="size-1 bg-black"></i>
+                    <span>О компании</span>
+                </li>
+            </ul>
+            <article class="prose mb-10 max-w-max">
+                <h1>Контакты</h1>
+                <p>
+                    Компания “НЕФТЕПРОМСИСТЕМА” специализируется на разработке и внедрении химических продуктов и
+                    технологий для процессов нефтедобычи. Основанная в 1978 году, компания имеет более 40 лет опыта в
+                    нефтепромысловой химии и предлагает широкий спектр решений для повышения нефтеотдачи пластов и
+                    интенсификации добычи нефти
+                </p>
+            </article>
+            <div class="space-y-6">
+                <div class="flex items-center">
+                    <div class="flex w-11 justify-center">
+                        <svg class="icon-pin h-7 w-6">
+                            <use href="#icon-pin"></use>
+                        </svg>
+                    </div>
+                    <div class="text-xl">г.Армавир, ул.Чичерина, 83</div>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex w-11 justify-center">
+                        <svg class="icon-phone size-6">
+                            <use href="#icon-phone"></use>
+                        </svg>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-2">
+                            <a href="tel:+79186200632" class="text-xl"
+                                >+7 (918) <span class="font-bold">620-06-32</span></a
+                            >
+                            <a href="#">
+                                <svg class="icon-wa size-7">
+                                    <use href="#icon-wa"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon-telegram size-7">
+                                    <use href="#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <a href="tel:+79186200632" class="text-xl"
+                                >+7 (918) <span class="font-bold">620-06-32</span></a
+                            >
+                            <a href="#">
+                                <svg class="icon-wa size-7">
+                                    <use href="#icon-wa"></use>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg class="icon-telegram size-7">
+                                    <use href="#icon-telegram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <div class="flex w-11 justify-center">
+                        <svg class="icon-email h-7 w-6">
+                            <use href="#icon-email"></use>
+                        </svg>
+                    </div>
+                    <a href="mailto:info@tdnps.ru" class="text-xl text-primary">info@tdnps.ru</a>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <img src="img/map.jpg" alt="" width="2003" height="751" loading="lazy" />
+            <div class="xl:container xl:absolute xl:bottom-0 xl:left-1/2 xl:-translate-x-1/2">
+                <div class="w-full bg-black px-10 py-12 text-white xl:absolute xl:bottom-0 xl:left-0 xl:w-[502px]">
+                    <div class="mb-8 text-center text-2xl font-bold uppercase">
+                        Остались вопросы? <br />
+                        Напишите нам
+                    </div>
+                    <form action="#">
+                        <div class="mb-5">
+                            <input type="text" placeholder="Ваше имя" class="form-input w-full" aria-label="" />
+                        </div>
+                        <div class="mb-5">
+                            <input type="text" placeholder="Телефон" class="form-input w-full" aria-label="" />
+                        </div>
+                        <div class="mb-5">
+                            <textarea
+                                placeholder="Вопрос"
+                                class="form-textarea h-[127px] w-full"
+                                aria-label="Вопрос"
+                            ></textarea>
+                        </div>
+                        <div class="mb-6 flex items-center gap-2">
+                            <input
+                                type="checkbox"
+                                id="rule"
+                                class="form-checkbox size-8 border-0 bg-white text-black focus:border-0 focus:shadow-none focus:outline-0 focus:ring-0 focus:ring-offset-0"
+                                x-model="rule"
+                                name="rule"
+                            />
+                            <label for="rule" class="cursor-pointer text-white"
+                                >Согласен (а) на обработку перональных даных
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button
+                                type="button"
+                                class="btn btn-primary btn-big w-full"
+                                :disabled="!rule"
+                                :class="{'opacity-50': !rule, 'pointer-events-none': !rule}"
+                            >
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <load ="partials/footer.html" />
+    </body>
+</html>
