@@ -14,11 +14,11 @@
     }
 }
 
-@layer components {
-    .bg-body {
-        background: url('img/bg-body.png') repeat-y center #000;
-    }
+.bg-body {
+    background: url('$img/bg-body.png') repeat-y center #000;
+}
 
+@layer components {
     .btn {
         @apply inline-flex justify-center px-8 py-4 text-xl leading-none;
 
