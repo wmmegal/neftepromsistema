@@ -44,6 +44,7 @@ if (splideProduct) {
     const splide = new Splide('.splide-product', {
         type: 'loop',
         arrows: false,
+        gap: 0,
         pagination: false,
         autoplay: true,
         interval: 5000,
